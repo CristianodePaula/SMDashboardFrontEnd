@@ -2,13 +2,12 @@
 import './sMenuTopModals.scss'
 import {
   IoIosNotifications,
-  IoMdSettings,
-  IoIosCart
+  IoMdSettings
 } from "react-icons/io";
 // import Modal from "../../../Modal";
 // import ModalNotifications from "../../../Modal/ModalNotifications";
 // import ModalSettings from "../../../Modal/ModalSettings";
-// import ModalCart from "../../../Modal/ModalCart";
+
 
 const MenuTopModals = () => {
 
@@ -30,17 +29,7 @@ const MenuTopModals = () => {
 
 export default MenuTopModals
 
-
-
-        {/* <div>
-          <IoIosCart onClick={()=> setOpenModal1(!openModal1)}/>
-        </div>
-        <Modal 
-          isOpen={openModal1} onClose={()=> setOpenModal1(false)}
-          title='Carrinho'
-        >
-          <ModalCart />
-        </Modal>
+        {/* 
         <div>
           <IoIosNotifications onClick={()=> setOpenModal2(!openModal2)}/>
         </div>

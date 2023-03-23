@@ -6,6 +6,7 @@ const MenuTopLogo = () => {
     <div className='menuTopLogo'>
         <img src={shop01} />
         <h1>Social Market</h1>
+        <h1>Company</h1>
     </div>
   )
 }

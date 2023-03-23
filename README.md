@@ -11,6 +11,19 @@ VISUALIZAR/EDITAR PÁGINA
 PRODUTOS
 SERVIÇOS
 SEGUIDORES
-SEGUINDO / PARCEIROS
 PEDIDOS
 MENSAGENS
+
+
+# PADRÃO SCSS
+
+    Flex
+    Display
+    Height/Width
+    Padding
+    Margin
+    Border / Border-Radius    
+    Color
+    Background
+    ::hover{}
+    @media
