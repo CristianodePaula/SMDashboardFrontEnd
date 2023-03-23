@@ -1,0 +1,29 @@
+// @import '../../../../theme.scss';
+
+.menuTopModals {
+    // @include themify($themes){
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+
+    .navMenuHambIcon {
+        display: none;
+        // @include mobile {
+        // display: block;
+        // }
+    }
+    
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+        // @include mobile {
+        //     font-size: 1.2rem;
+        // }
+    }
+}
+// }
