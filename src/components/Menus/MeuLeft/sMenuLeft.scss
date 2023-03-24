@@ -1,22 +1,26 @@
 .menuLeft {
-    flex: 0.5;
-    padding: 30px;
-    gap: 0px;
+    flex: 0.7;
+    padding: 10px;
     border-right: 1px solid rgb(224, 217, 217);
     
+    h1 {
+        font-size: 1rem;
+        padding-left: 10px;
+        color: navy;
+    }
+
     div {
         display: flex;
         align-items: center;
-        margin: 10px;
+        margin: 8px;
         color: navy;
         cursor: pointer;
-        
+    
         .icon {
             font-size: 1.5rem;
             cursor: pointer;      
         }
     }
-
     span {
         font-size: 1rem;
     }

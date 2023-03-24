@@ -1,11 +1,11 @@
-import './sProduct.scss'
+import './sProducts.scss'
 
-const Product = () => {
+const Products = () => {
   return (
-    <div className='product'>
-      Product 
+    <div className='products'>
+      Produtos
     </div>
   )
 }
 
-export default Product
+export default Products

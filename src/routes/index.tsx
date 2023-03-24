@@ -5,13 +5,14 @@ import {
     Navigate,
   } from "react-router-dom";
 // import components
-import Layout from "../../layout";
+import Layout from "../layout";
 import Login from "../pages/Login";
 import Home from "../pages/Home";
 import Page from "../pages/Page";
-import Product from "../pages/Products";
-import Services from "../pages/Services";
+import Products from "../pages/Products";
 import Customers from "../pages/Customers";
+import Followers from "../pages/Followers";
+import Services from "../pages/Services";
 import PurchaseOrder from "../pages/PurchaseOrder";
 import Messages from "../pages/Messages";
 
@@ -41,16 +42,20 @@ const Routes = () => {
           element: <Page />,
         },
         {
-          path: "/product",
-          element: <Product />,
-        },
-        {
-          path: "/services",
-          element: <Services />,
+          path: "/products",
+          element: <Products />,
         },
         {
           path: "/customers",
           element: <Customers />,
+        },
+        {
+          path: "/followers",
+          element: <Followers />,
+        },
+        {
+          path: "/services",
+          element: <Services />,
         },
         {
           path: "/purchaseOrder",

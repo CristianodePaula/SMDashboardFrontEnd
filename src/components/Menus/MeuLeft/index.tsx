@@ -6,6 +6,7 @@ import {
   IoMdShirt,
   IoMdLaptop,
   IoMdPeople,   
+  IoIosPeople,
   IoIosListBox,
   IoIosChatboxes
 }  from  "react-icons/io";
@@ -14,7 +15,8 @@ const MenuLeft = () => {
 
   return (
     <div className='menuLeft'>
-        <Link className='Link' to='/'>
+      <h1>Início</h1>
+          <Link className='Link' to='/'>
             <div>
               <div className='icon'>
                 <IoMdHome />          
@@ -30,14 +32,32 @@ const MenuLeft = () => {
               <span>Página</span>
             </div>
           </Link>
-          <Link className='Link' to='/product'>
+        <h1>Listas</h1>
+          <Link className='Link' to='/products'>
             <div>
               <div className='icon'>
                 <IoMdShirt />          
               </div>
-              <span>Produto</span>
+              <span>Produtos</span>
             </div>
           </Link>
+          <Link className='Link' to='/customers'>
+            <div>
+              <div className='icon'>
+                <IoMdPeople />          
+              </div>
+              <span>Clientes</span>
+            </div>
+          </Link>
+          <Link className='Link' to='/followers'>
+            <div>
+              <div className='icon'>
+                <IoIosPeople />          
+              </div>
+              <span>Seguidores</span>
+            </div>
+          </Link>
+        <h1>Ordens</h1>
           <Link className='Link' to='/services'>
             <div>
               <div className='icon'>
@@ -46,22 +66,15 @@ const MenuLeft = () => {
               <span>Serviços</span>
             </div>
           </Link>
-          <Link className='Link' to='/customers'>
-            <div>
-              <div className='icon'>
-                <IoMdPeople  />          
-              </div>
-              <span>Clientes</span>
-            </div>
-          </Link>
           <Link className='Link' to='/purchaseOrder'>
             <div>
               <div className='icon'>
                 <IoIosListBox />          
               </div>
-              <span>Ordens</span>
+              <span>Pedidos</span>
             </div>
           </Link>
+        <h1>Menssagens</h1>
           <Link className='Link' to='/messages'>
             <div>
               <div className='icon'>
