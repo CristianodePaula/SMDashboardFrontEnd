@@ -1,0 +1,42 @@
+// @import '../../../theme.scss';
+
+
+.companySchedulingTop {
+    // @include themify($themes){
+    // background-color: themed('bgTimeline');
+    padding: 20px;
+    border-radius:20px;
+    
+    h3 { 
+    font-size: 1rem;
+    display: flex;
+        // @include mobile {
+        //     font-size: 0.9rem;
+        // }
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        text-align: center;
+        padding: 20px;
+        // @include mobile {
+        //     grid-template-columns: 1fr 1fr ;
+        // }
+       
+    span {
+        background: white;
+        width: 150px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        font-size: 12px;
+        box-shadow: 4px 4px 4px grey;
+        cursor: pointer;
+        }
+    }
+}
+// }

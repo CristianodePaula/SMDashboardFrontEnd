@@ -1,0 +1,33 @@
+// @import '../../../theme.scss';
+
+.productBar {
+    // @include themify($themes){
+    height: 8vh;
+    // background-color: themed('bgTimeline');
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 6px;
+    
+    img {
+        height: 30px;
+        width: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    input {
+        border: none;
+        outline: 0;
+        height: 2vw;
+        width: 25vw;
+        border-radius: 10px;
+        padding-left: 10px;
+            // @include mobile {
+            //     height: 4vw;
+            //     width: 55vw;
+            // }
+        }
+    }
+// }

@@ -1,3 +1,9 @@
+# Funcionalidades
+
+* Inserir loading
+
+
+
 # NAV BAR
 
 CONFIG  > AJUDA / SUPORTE

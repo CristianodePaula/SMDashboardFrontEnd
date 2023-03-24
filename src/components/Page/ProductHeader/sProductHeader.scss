@@ -1,0 +1,12 @@
+// @import '../../../theme.scss';
+
+.productHeader {
+    // @include themify($themes){  
+        img {
+        height: 30vh;
+        object-fit: cover;
+        border-radius: 10px;
+        width: 100%;
+       }
+    }
+// }

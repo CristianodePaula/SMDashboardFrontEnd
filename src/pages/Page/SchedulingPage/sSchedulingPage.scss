@@ -1,0 +1,23 @@
+// @import '../../../theme.scss';
+
+.schedulingPage {
+    // @include themify($themes){
+        flex: 3.21;
+        height: 150vh;
+        padding: 20px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+
+        overflow: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        // @include mobile {
+        //     width: 45%; // gambiarra
+        //   }
+
+    }
+// }

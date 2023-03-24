@@ -1,9 +1,13 @@
+import MenuCompany from '../../components/Menus/MenuCompany'
 import './sPage.scss'
 
 const Page = () => {
   return (
     <div className='page'>
-      Page
+      <MenuCompany />
+      <div>
+        
+      </div>
     </div>
   )
 }

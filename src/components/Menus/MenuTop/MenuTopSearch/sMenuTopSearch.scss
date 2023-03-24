@@ -1,22 +1,15 @@
-// @import '../../../../theme.scss'; 
-
 .menuTopSearch {
-    // @include themify($themes){
     flex: 2;
     height: 100%;
     display: flex;
     align-items: center;  
     justify-content: center;
-    // @include mobile{
-    //     display: none;
-    // }
 
     div {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1rem;
-        
+        font-size: 1rem;        
     }
 
     .search {
@@ -27,7 +20,7 @@
         height: 1.5rem;
         width: 25rem;
         padding: 5px 20px 5px 20px;
-        
+       
         input {
             background-color: rgb(224, 217, 217);
             border: none;
@@ -37,4 +30,3 @@
         }
     }
 }
-// }
