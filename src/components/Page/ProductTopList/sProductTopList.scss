@@ -1,0 +1,61 @@
+// @import '../../../theme.scss';
+
+.productTopList {
+    // @include themify($themes){
+        align-items: center;
+        justify-content: center;
+        // background-color: themed('bgTimeline');
+        border-radius: 10px;
+        padding: 20px;
+        
+        h1 {
+            font-size: 1rem;
+            color: themed("menuColor");
+            padding-bottom: 20px;
+            // @include mobile {
+            //     font-size: 0.9rem;
+            // }
+            
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            // @include mobile {
+            //     display: grid;
+            //     grid-template-columns: 1fr 1fr;    
+            // }   
+
+            .companyBestSellersItem {
+                position: relative;
+            
+                img {
+                    height: 200px;
+                    width: 215px;
+                    object-fit: cover;
+                    border-radius: 5px;
+                    // @include mobile {
+                    //     height: 100px;
+                    //     width: 180px;
+                    // }
+                }
+
+                span {
+                    position: absolute;
+                    top: 0;
+                    right: 5%;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: white;
+                    text-shadow: 5px 5px 5px black;
+                    // @include mobile {
+                    //     right: 15%;
+                    //     font-size: 0.9rem;
+                    // }
+                }     
+            }
+        }
+    }
+// }

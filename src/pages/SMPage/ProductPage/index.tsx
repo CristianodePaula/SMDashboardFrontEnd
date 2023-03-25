@@ -1,6 +1,8 @@
 import MenuCompany from '../../../components/Menus/MenuCompany'
 import ProductBar from '../../../components/Page/ProductBar'
 import ProductHeader from '../../../components/Page/ProductHeader'
+import ProductPromotions from '../../../components/Page/ProductPromotions'
+import ProductTopList from '../../../components/Page/ProductTopList'
 import './sProductPage.scss'
 
 const ProductPage = () => {
@@ -9,9 +11,8 @@ const ProductPage = () => {
       <MenuCompany />    
       <ProductBar />
       <ProductHeader />
-      {/* <Promotions />
-      <BestSellers />  
-      <ProductList /> */}
+      {/* <ProductPromotions /> */}
+      {/* <ProductTopList /> */}
     </div>
   )
 }

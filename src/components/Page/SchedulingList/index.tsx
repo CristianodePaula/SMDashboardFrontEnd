@@ -3,7 +3,7 @@ import './sSchedulingList.scss'
 const SchedulingList = () => {
   return (
     <div className='schedulingList'>
-      <h3>Quais Serviços Agendamos</h3>
+      {/* <h3>Quais Serviços Agendamos</h3> */}
       <div>
         <span>Dentista</span>
         <span>Ortopedia</span>

@@ -3,7 +3,7 @@ import './sMessages.scss'
 const Messages = () => {
   return (
     <div className='messages'>
-      Messages
+      Mensagens
     </div>
   )
 }

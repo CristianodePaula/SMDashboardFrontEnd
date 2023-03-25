@@ -1,41 +1,46 @@
 // @import '../../../theme.scss';
 
 
-.companySchedulingTop {
+.schedulingList {
     // @include themify($themes){
     // background-color: themed('bgTimeline');
-    padding: 20px;
-    border-radius:20px;
+    // padding: 20px;
+    // background-color: rgb(224, 217, 217);
+    // border-radius: 10px;
+    // padding: 30px;
+    // height: 20vh;
+    background-color: rgb(224, 217, 217);
+    border-radius: 10px;
     
     h3 { 
-    font-size: 1rem;
-    display: flex;
+        // font-size: 16px;
+        // font-size: 1rem;
+    // display: flex;
         // @include mobile {
         //     font-size: 0.9rem;
         // }
     }
 
     div {
-        display: grid;
+        // display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        gap: 20px;
+        gap: 30px;
         text-align: center;
-        padding: 20px;
         // @include mobile {
         //     grid-template-columns: 1fr 1fr ;
         // }
        
     span {
-        background: white;
-        width: 150px;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 20px;
-        font-size: 12px;
-        box-shadow: 4px 4px 4px grey;
-        cursor: pointer;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // background: white;
+        // height: 30px;
+        // width: 120px;
+        // border-radius: 20px;
+        // font-size: 12px;
+        // box-shadow: 4px 4px 4px grey;
+        // cursor: pointer;
         }
     }
 }

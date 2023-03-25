@@ -1,27 +1,24 @@
 import './sHome.scss'
-import Widget from '../../components/Widget'
-import BarChartNoPadding from '../../components/Charts/BarChartNoPadding'
-import SimpleAreaChart from '../../components/Charts/SimpleAreaChart'
-import SimpleLineChart from '../../components/Charts/SimpleLineChart'
+import Welcome from '../../components/Cards/Welcome'
+import LastMembersCard from '../../components/Cards/LastMembersCard'
+import NewUsersCard from '../../components/Cards/NewUserCard'
+import CommentsCard from '../../components/Cards/CommentsCard'
+
 
 const Home = () => {
   return (
     <div className='home'>
-      <div>
-        <Widget type="Usuários"/>
-        <Widget type="Ordens"/>
-        <Widget type="Compras"/>
-        <Widget type="Balanço"/>
+      <div className='homeUsers'>
+        <Welcome />
+        <LastMembersCard />
       </div>
-      <div className='homeCharts'>
-        <div style={{display: 'flex', flexDirection: 'column'}}>
-        <BarChartNoPadding />
-        <SimpleAreaChart />
-        </div>
-          <SimpleLineChart />
+      <div className='homeSocial'>   
+        <NewUsersCard title='Clientes Recentes'/>
+        <NewUsersCard title='Novos Seguidores'/>
+        <CommentsCard />
       </div>
     </div>
   )
 }
 
-export default Home 
+export default Home

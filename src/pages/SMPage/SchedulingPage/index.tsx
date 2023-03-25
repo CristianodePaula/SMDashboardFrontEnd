@@ -3,7 +3,6 @@ import SchedulingContact from '../../../components/Page/SchedulingContact'
 import SchedulingHeader from '../../../components/Page/SchedulingHeader'
 import SchedulingInput from '../../../components/Page/SchedulingInput'
 import SchedulingList from '../../../components/Page/SchedulingList'
-import SchedulingService from '../../../components/Page/SchedulingService'
 import './sSchedulingPage.scss'
 
 const SchedulingPage = () => {
@@ -11,10 +10,9 @@ const SchedulingPage = () => {
     <div className='schedulingPage'>
       <MenuCompany />
       <SchedulingHeader />
-      <SchedulingService />
       <SchedulingInput />
       <SchedulingList />
-      <SchedulingContact />
+      {/* <SchedulingContact /> */}
     </div>
   )
 }

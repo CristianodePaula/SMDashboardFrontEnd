@@ -4,21 +4,24 @@ import {
     RouterProvider,
     Navigate,
   } from "react-router-dom";
+
 // import components
-import Layout from "../design/Layout";
+import LayoutBase from "../design/LayoutBase";
+
 import Login from "../pages/Login";
 import Home from "../pages/Home";
-import Page from "../pages/Page";
+import Charts from "../pages/Charts";
 import Products from "../pages/Products";
 import Customers from "../pages/Customers";
 import Followers from "../pages/Followers";
 import Services from "../pages/Services";
 import PurchaseOrder from "../pages/PurchaseOrder";
 import Messages from "../pages/Messages";
-import LayoutPage from "../design/LayoutPage";
-import HomePage from "../pages/Page/CompanyPage";
-import ProductPage from "../pages/Page/ProductPage";
-import SchedulingPage from "../pages/Page/SchedulingPage";
+
+import CompanyPage from "../pages/SMPage/CompanyPage";
+import ProductPage from "../pages/SMPage/ProductPage";
+import SchedulingPage from "../pages/SMPage/SchedulingPage";
+
 
 const Routes = () => {
 
@@ -35,15 +38,15 @@ const Routes = () => {
   const routers = createBrowserRouter([
     {
       path: "/",
-      element: <PrivateRoute><Layout /> </PrivateRoute>,
+      element: <PrivateRoute><LayoutBase /></PrivateRoute>,
       children: [
         {
           path: "/",
           element: <Home />,
         },
         {
-          path: "/page",
-          element: <Page />,
+          path: "/charts",
+          element: <Charts />,
         },
         {
           path: "/products",
@@ -69,35 +72,30 @@ const Routes = () => {
           path: "/messages",
           element: <Messages />,
         },
+        // {
+        //   path: "/companyPage",
+        //   element: <CompanyPage />,
+        // },
+        {
+          path: "/productPage",
+          element: <ProductPage />,
+        },
+        {
+          path: "/schedulingPage",
+          element: <SchedulingPage />,
+        },
       ],
     },
-
-    
-    // {
-    //   path: "/",
-    //   element: <PrivateRoute><LayoutPage /> </PrivateRoute>,
-    //   children: [
-    //     {
-    //       path: "/",
-    //       element: <HomePage />,
-    //     },
-    //     {
-    //       path: "/",
-    //       element: <ProductPage />,
-    //     },
-    //     {
-    //       path: "/",
-    //       element: <SchedulingPage />,
-    //     },
-    //   ],
-    // },
-
 
     {
       path: "/login",
       element: <Login />
     },
-])  
+  
+  
+  ])  
+
+
     return (
       <div className="App">
         <RouterProvider router={routers} />   

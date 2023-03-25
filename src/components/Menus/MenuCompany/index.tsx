@@ -1,12 +1,31 @@
 import './sMenuCompany.scss'
+import { Link } from 'react-router-dom'
+import { 
+  IoIosEye,
+  IoIosCreate
+} from "react-icons/io"
 
 const MenuCompany = () => {
   return (
     <div className='menuCompany'>
-          <span>Home</span>
-          <span>Produto</span>
+      <div>
+        <Link to='/'> 
+          <span> Home </span> 
+        </Link>
+        <Link to='/productPage'> 
+          <span> Produtos </span> 
+        </Link> 
+        <Link to='/schedulingPage'>
           <span>Agendamento</span>
-          <span>Desempenho em Rede</span>
+        </Link>
+        <Link to=''>
+          <span>Desempenho</span>
+        </Link>
+      </div>
+      <div className='menuCompIcon'>
+        <IoIosEye/> <span> Ver </span>
+        <IoIosCreate/> <span> Editar </span>
+      </div>      
     </div>
   )
 }

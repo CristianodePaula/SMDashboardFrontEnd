@@ -1,0 +1,30 @@
+.userCard {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 4px 4px 10px 2px rgba(201, 201, 201, 0.47);
+    border-radius: 10px;
+    
+    img {
+        height: 100px;
+        width: 80px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .userCardBox {
+        display: flex;
+        flex-direction: column;
+        
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+ 
+            span{
+                font-size: 10px;
+            }
+        }
+    }
+}

@@ -10,8 +10,7 @@ import {
 const SchedulingInput = () => {
   return (
     <div className='schedulingInput '>
-      <h3>Agendamento</h3>   
-
+        <h3>Agendamento</h3>   
         <div className='companySchedulingService'> 
             <div>
                 <RiServiceFill />
@@ -35,8 +34,6 @@ const SchedulingInput = () => {
             </div>
             <button>Agendar</button>
         </div>
-
-
     </div>
   )
 }

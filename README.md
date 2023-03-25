@@ -4,6 +4,15 @@
 
 
 
+# Padrão CSS
+
+* CompanyMenu => nome de componente preserva inglês
+* companyMenu => nome de estilo principal em cammelCase (jsx)
+* companyMenuItem => nome de filho do estilo herda nome principal
+* companyMenuComp => abrevição de 3 a 4 letras no final
+* px para texto
+* vh e vh para tela
+
 # NAV BAR
 
 CONFIG  > AJUDA / SUPORTE

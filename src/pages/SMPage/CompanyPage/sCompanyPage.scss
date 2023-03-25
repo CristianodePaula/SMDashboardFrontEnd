@@ -2,10 +2,9 @@
 
 .homePage {
     // @include themify($themes){
-        flex: 3.21;
-        height: 150vh;
+        flex: 3.5;
         padding: 20px;
-        color: themed("menuColor");
+        // color: themed("menuColor");
         display: flex;
         flex-direction: column;
         gap: 20px;
