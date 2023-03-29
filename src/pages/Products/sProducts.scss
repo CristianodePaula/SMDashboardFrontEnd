@@ -1,6 +1,11 @@
-
 .products {
     flex: 3.5;
-    height: 92vh;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 91.8vh;
+    overflow: scroll;
+ 
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }

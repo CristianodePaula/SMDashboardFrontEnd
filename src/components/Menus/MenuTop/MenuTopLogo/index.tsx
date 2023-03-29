@@ -1,10 +1,10 @@
 import './sMenuTopLogo.scss'
-import shop01 from '../../../../assets/shop03.png';
+import smLogo from '../../../../assets/smLogoTemp.png';
 
 const MenuTopLogo = () => {
   return (
     <div className='menuTopLogo'>
-        <img src={shop01} />
+        <img src={smLogo} />
         <h1>Social Market</h1>
         <h1>Company</h1>
     </div>

@@ -1,9 +1,11 @@
 import './sPurchaseOrder.scss'
+import inCourse from '../../assets/inCourse.jpg';
 
 const PurchaseOrder = () => {
   return (
     <div className='purchaseOrder'>
-        Pedidos
+      <h2>Em construção</h2>
+      <img src={inCourse} alt="" />
     </div>
   )
 }

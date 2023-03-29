@@ -25,7 +25,6 @@ const MenuLeft = () => {
               <span>Home</span>
             </div>
           </Link>
-          
           <Link className='Link' to='/charts'>
             <div>
               <div className='icon'>
@@ -34,14 +33,7 @@ const MenuLeft = () => {
               <span>Gráficos</span>
             </div>
           </Link>
-          <Link className='Link' to='/productPage'>
-            <div>
-              <div className='icon'>
-                <IoIosGlobe />          
-              </div>
-              <span>Página</span>
-            </div>
-          </Link>
+         
           <Link className='Link' to='/products'>
             <div>
               <div className='icon'>
@@ -74,20 +66,28 @@ const MenuLeft = () => {
               <span>Seguidores</span>
             </div>
           </Link>
-          <Link className='Link' to='/charts'>
+          {/* <Link className='Link' to='/charts'>
             <div>
               <div className='icon'>
                 <IoIosListBox />          
               </div>
               <span>Pedidos</span>
             </div>
-          </Link>
+          </Link> */}
           <Link className='Link' to='/messages'>
             <div>
               <div className='icon'>
                 <IoIosChatboxes />          
               </div>
               <span>Mensagens</span>
+            </div>
+          </Link>
+          <Link className='Link' to='/productPage'>
+            <div>
+              <div className='icon'>
+                <IoIosGlobe />          
+              </div>
+              <span>Página</span>
             </div>
           </Link>
     </div>

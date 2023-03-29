@@ -1,9 +1,10 @@
+import Table from '../../components/Table'
 import './sProducts.scss'
 
 const Products = () => {
   return (
     <div className='products'>
-      Produtos
+      <Table />
     </div>
   )
 }

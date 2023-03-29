@@ -13,7 +13,7 @@ const Home = () => {
         <LastMembersCard />
       </div>
       <div className='homeSocial'>   
-        <NewUsersCard title='Clientes Recentes'/>
+        <NewUsersCard title='Novos Clientes'/>
         <NewUsersCard title='Novos Seguidores'/>
         <CommentsCard />
       </div>

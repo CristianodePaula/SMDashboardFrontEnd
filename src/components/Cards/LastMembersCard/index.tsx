@@ -5,7 +5,7 @@ import '../../MiniCards/UserCard/sUserCard.scss'
 const LastMembersCard = () => {
   return (
     <div className='lastMembersCard'>
-      <h1> Administradores </h1>
+      <h1> Gestores </h1>
       {/* <div>   
         <UserCard  />
         <UserCard  />
