@@ -1,0 +1,49 @@
+@import '../../../design/Theme/theme.scss';
+
+.leftProduct {
+  // @include themify($themes){
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px 0px 0px 20px;
+    
+    background-color: rgb(224, 217, 217);
+    // background: themed('bgTimeline');
+      // @include mobile {
+      //  gap: 0px;
+      //  border-radius: 20px;;
+      // }
+  
+    .images {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      img{
+        height: 115px;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 10px;
+        // cursor: pointer;
+        //   @include mobile {
+        //     height: 77px;
+        //     width: 70px;    
+        //   }
+      }      
+    }
+
+    .mainImg {
+      flex: 4;
+
+      img{
+        height: 460px;
+        width: 300px;
+        object-fit: cover;
+          // @include mobile {
+          //   height: 310px; 
+          //   width: 240px;   
+          // }
+      }
+    }
+  }
+// }

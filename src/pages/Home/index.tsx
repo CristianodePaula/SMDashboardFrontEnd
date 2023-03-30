@@ -1,6 +1,6 @@
 import './sHome.scss'
 import Welcome from '../../components/Cards/Welcome'
-import LastMembersCard from '../../components/Cards/LastMembersCard'
+import LastMembersCard from '../../components/Cards/MembersCard'
 import NewUsersCard from '../../components/Cards/NewUserCard'
 import CommentsCard from '../../components/Cards/CommentsCard'
 

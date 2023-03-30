@@ -1,8 +1,8 @@
-import UserCard from '../../MiniCards/UserCard'
+import UserCard from '../UserCard'
 import './sLastMembersCard.scss'
-import '../../MiniCards/UserCard/sUserCard.scss'
+import '../UserCard/sUserCard.scss'
 
-const LastMembersCard = () => {
+const MembersCard = () => {
   return (
     <div className='lastMembersCard'>
       <h1> Gestores </h1>
@@ -94,10 +94,8 @@ const LastMembersCard = () => {
       </div>
     </div>
     </div>
-
-     
     </div>
   )
 }
 
-export default LastMembersCard
+export default MembersCard

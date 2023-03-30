@@ -9,8 +9,10 @@ import {
 
 const Table = () => {
   return (
-    <div className='tableContainer'>
-      <button>Criar</button>
+    <div className='table'>
+      <Link to='/newProduct'>
+        <button>Criar</button>
+      </Link>
       <table>
       <tbody>
         <tr>
@@ -33,16 +35,16 @@ const Table = () => {
             <td>{item.desc}</td>
             <td>R${item.price},00</td>
             <td>
-            <Link to={'/product'}>
-                <button>
-                  <IoIosEye />
-                </button>
-              </Link>
-              <Link to={'/productEdit'}>
-                <button> 
-                  <IoIosCreate />
-                </button>
-              </Link>
+            <Link to='/viewProduct'>
+              <button>
+                <IoIosEye />
+              </button>
+            </Link>
+            <Link to='/editProduct'>
+              <button> 
+                <IoIosCreate />
+              </button>
+            </Link>
               <button> 
                 <IoIosTrash />
               </button>

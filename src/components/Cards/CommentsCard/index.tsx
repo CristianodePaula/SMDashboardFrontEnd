@@ -7,7 +7,7 @@ const CommentsCard = () => {
        <div className='modalNotUser'>
         <img src='https://images.pexels.com/photos/415263/pexels-photo-415263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
         <div>
-          <span>Camila</span>
+          <span>Juliana</span>
           <span> Voce sabe o que está...</span>
           <span>2 horas atrás</span>
         </div>

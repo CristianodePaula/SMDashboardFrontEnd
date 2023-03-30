@@ -1,0 +1,130 @@
+@import '../../../design/Theme/theme.scss';
+
+.rightProduct {
+    // @include themify($themes){
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: rgb(224, 217, 217);
+    // background: themed('bgTimeline');
+    gap: 20px;
+    // @include mobile {
+    //   border-radius: 20px;
+    // }
+
+    h1 {
+      font-size: 1.2rem;
+      // color: themed('textColor');
+    //   @include mobile {
+    //     font-size: 1rem;
+    //   }
+    // }
+
+    h3 {
+            font-size: 1.2rem;
+      color: green;
+      // @include mobile {
+      //   font-size: 1rem;
+      // }
+    }
+    p {
+      font-size: 1rem;
+      // color: themed('textColor');
+      // @include mobile {
+      //   font-size: 0.8rem;
+      // }
+    }
+
+    .price{
+      font-size: 0.8rem;
+      color: #2879fe;
+      font-weight: 500;
+    }
+
+    p{
+      font-size: 0.8rem;;
+      font-weight: 300;
+      text-align: justify;
+    }
+
+    .quantity{
+      display: flex;
+      align-items: center;  
+      gap: 10px;
+    
+      button {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+        // @include mobile {
+        //   height: 30px;
+        //   width: 30px;
+        
+        // }
+      }
+    }
+
+    .add {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      padding: 10px;
+      background-color: #2879fe;
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+      border: none;
+      gap: 20px;
+      cursor: pointer;
+      // @include mobile {
+      //   width: 200px;
+      //   font-size: 0.8rem;
+      //   gap: 10px;
+      // }
+    }
+
+    .links{
+      display: flex;
+      gap: 20px;
+
+      .item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #2879fe;
+        // font-size: 1rem;
+        //   @include mobile {
+        //     font-size: 0.8rem;
+        //   }
+      }
+    }
+
+    .info{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: gray;
+      font-size: 1rem;;
+      //  @include mobile {
+      //       font-size: 0.8rem;
+      //     }
+
+      hr{
+        width: 200px;
+        border: 1px solid rgb(238, 237, 237);
+      }
+    }
+
+    hr{
+      border: 1px solid rgb(238, 237, 237);
+    }
+  }
+}

@@ -21,6 +21,9 @@ import Messages from "../pages/Messages";
 import CompanyPage from "../pages/SMPage/CompanyPage";
 import ProductPage from "../pages/SMPage/ProductPage";
 import SchedulingPage from "../pages/SMPage/SchedulingPage";
+import ViewProduct from "../pages/Products/ViewProduct";
+import NewProduct from "../pages/Products/NewProduct";
+import EditProduct from "../pages/Products/EditProduct";
 
 
 const Routes = () => {
@@ -72,7 +75,7 @@ const Routes = () => {
           path: "/messages",
           element: <Messages />,
         },
-        // {
+        // { // bug de renderização
         //   path: "/companyPage",
         //   element: <CompanyPage />,
         // },
@@ -84,6 +87,18 @@ const Routes = () => {
           path: "/schedulingPage",
           element: <SchedulingPage />,
         },
+        {
+          path: "/viewProduct",
+          element: <ViewProduct />,
+        },
+        {
+          path: "/newProduct",
+          element: <NewProduct />,
+        },{
+          path: "/editProduct",
+          element: <EditProduct />,
+        },
+        
       ],
     },
 

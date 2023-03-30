@@ -1,5 +1,6 @@
+import Table from '../../components/Table'
 import './sFollowers.scss'
-import Table from '../../components/Table';
+
 
 const Followers = () => {
   return (
