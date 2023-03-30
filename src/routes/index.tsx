@@ -21,9 +21,9 @@ import Messages from "../pages/Messages";
 import CompanyPage from "../pages/SMPage/CompanyPage";
 import ProductPage from "../pages/SMPage/ProductPage";
 import SchedulingPage from "../pages/SMPage/SchedulingPage";
-import ViewProduct from "../pages/Products/ViewProduct";
-import NewProduct from "../pages/Products/NewProduct";
-import EditProduct from "../pages/Products/EditProduct";
+import ViewProduct from "../pages/Product/ViewProduct";
+import NewProduct from "../pages/Product/NewProduct";
+import EditProduct from "../pages/Product/EditProduct";
 
 
 const Routes = () => {

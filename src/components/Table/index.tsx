@@ -40,7 +40,7 @@ const Table = () => {
                 <IoIosEye />
               </button>
             </Link>
-            <Link to='/editProduct'>
+            <Link to='/newProduct'>
               <button> 
                 <IoIosCreate />
               </button>

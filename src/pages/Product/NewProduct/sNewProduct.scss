@@ -1,0 +1,22 @@
+.newProduct {
+    flex: 3.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;     
+    height: 91.8vh;
+    overflow: scroll;
+   
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(224, 217, 217);
+        border-radius: 10px;
+        width: 96%;;
+    }
+}
