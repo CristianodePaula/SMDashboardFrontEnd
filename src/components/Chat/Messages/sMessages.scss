@@ -1,0 +1,23 @@
+// @import '../../../theme.scss';
+
+.messages {
+    // @include themify($themes){
+    flex: 2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    // @include mobile {
+    //     display: none;
+    // }
+    
+    .messagesLine {
+        
+        overflow: scroll;
+           height: 80vh; 
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+// }

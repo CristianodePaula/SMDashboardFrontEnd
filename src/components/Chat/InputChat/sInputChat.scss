@@ -1,0 +1,43 @@
+@import '../../../design/Theme/theme.scss';
+
+.inputChat {
+    // @include themify($themes){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    // border-top: 1px solid themed('bgTimeline');
+    border-bottom: 1px solid grey;
+    border-radius: 0px 0px 0px 10px; 
+    
+    input {
+       border: none;
+       outline: 0;
+       padding-left: 10px;
+       height: 30px;
+       width: 650px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        // background: themed('bgSoft');
+        // color: themed('menuColor');
+        padding: 5px;
+        width: 150px;
+        
+    
+        button {
+            height: 30px;
+            width: 60px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(89, 94, 145);
+            color: white;
+        }
+    }
+}
+// }

@@ -1,0 +1,29 @@
+@import '../../../design/Theme/theme.scss';
+
+.messageBar {
+    // @include themify($themes){
+    // background-color: themed('bgTimeline');
+    background-color: rgb(224, 217, 217);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vh;
+    padding: 10px;
+    padding-left: 10px;
+    border-radius: 10px 0px 0px 0px;
+
+    div {
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+        color: white;
+
+        span {
+            font-weight: 500;
+            font-size: 1rem;
+            // @include mobile {
+            //     font-size: 0.8rem;
+            }
+        }
+    }
+// }}

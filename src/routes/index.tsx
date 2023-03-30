@@ -16,7 +16,7 @@ import Customers from "../pages/Customers";
 import Followers from "../pages/Followers";
 import Services from "../pages/Services";
 import PurchaseOrder from "../pages/PurchaseOrder";
-import Messages from "../pages/Messages";
+import Messages from "../pages/Chat";
 
 import CompanyPage from "../pages/SMPage/CompanyPage";
 import ProductPage from "../pages/SMPage/ProductPage";

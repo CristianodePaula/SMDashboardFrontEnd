@@ -1,0 +1,38 @@
+@import '../../../design/Theme/theme.scss';
+
+.friend {
+//   @include themify($themes){
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    .friendBox {
+        display: flex;    
+        padding: 20px 0px 10px 30px;
+        gap: 10px;
+        
+        img {
+            height: 60px;
+            width: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            
+            span:nth-child(1) {
+                font-weight: 600;
+                font-size: 16px;
+            }            
+            span:nth-child(2) {
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
+    }
+}
+// }

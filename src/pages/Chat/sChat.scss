@@ -1,0 +1,15 @@
+.chat {
+    flex: 3.5;
+    display: flex;
+    height: 91.8vh;
+    overflow: scroll;
+ 
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .chatBox {
+        display: flex;
+        padding: 20px;
+    }
+}

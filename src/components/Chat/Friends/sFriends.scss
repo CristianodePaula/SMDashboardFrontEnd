@@ -1,0 +1,17 @@
+@import '../../../design/Theme/theme.scss';
+
+
+.friends {
+    // @include themify($themes){
+    // flex: 2;
+    // background: themed("bgSoft");
+    background-color: rgb(224, 217, 217);
+    border-radius: 0px 10px 10px 0px;
+    border-bottom: 1px solid grey;  
+    padding-right: 25px;
+    // @include mobile {
+    //     border-radius: 10px
+        
+    // }
+}
+// }

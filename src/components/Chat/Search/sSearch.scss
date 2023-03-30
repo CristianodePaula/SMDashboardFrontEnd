@@ -1,0 +1,25 @@
+@import '../../../design//Theme/theme.scss';
+
+.searchFriend {
+    // @include themify($themes){
+    input {
+        background-color: rgb(224, 217, 217);
+        height: 5vh;
+        // padding: 10px;
+        width: 92%; // gambiarra
+        border: none;
+        outline: 0;;
+        padding-left: 15px;
+        border-radius: 0px 10px 0px 0px;
+        border-left: 1px solid white;
+        color: white;
+        // @include mobile {
+        //     border-radius: 10px 10px 0px 0px;
+        // }
+
+        &::placeholder {
+            color: white;
+        }
+    }
+}
+// }
