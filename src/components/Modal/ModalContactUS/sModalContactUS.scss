@@ -1,0 +1,79 @@
+@import '../../../design/Theme/theme.scss';
+
+.modalContactUS {
+    // @include themify($themes){
+    // border-bottom: 1px solid themed('bgTimeline');
+    height: 100%;
+    width: 100%;    
+    display: flex;
+    
+    .modalContUBox {
+        flex-direction: column;
+        width: 100%;
+
+        .modalContUItens {
+            display: flex;
+            flex-direction: column;
+            width: 100%; 
+            gap: 20px;
+            border-radius: 10px;
+            border-bottom: 1px solid rgb(182, 175, 175);
+            padding: 10px;
+            // @include mobile {
+            //     gap: 10px;
+            // }
+
+            div {
+                width: 100%;    
+                display: flex;
+                gap: 10px;
+                
+                span {
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    width: 100%;
+                    // @include mobile {
+                    //     font-size: 0.7rem;
+                    // }
+                }
+            }
+
+            input {
+                height: 10vh;
+                width: 90%;
+                border-radius: 10px;
+                border: none;
+                outline: 0;
+                background-color: rgb(218, 213, 213);
+                &::placeholder {
+                    display: flex;
+                    top: 0;
+                    padding-left: 10px;
+                    font-size: 0.8rem;
+                    // @include mobile {
+                    //     height: 6vh;
+                    //     width: 80%;
+                    //     font-size: 0.6rem;
+                    // }
+                }
+            }
+
+            button{
+                font-size: 0.8rem;
+                height: 5vh;
+                width: 20vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(41, 41, 114);
+                color:white;
+                // @include mobile {
+                //     height: 4vh;
+                //     width: 15vh;
+                //     font-size: 0.7rem;
+                // }
+            }
+        }    
+    }
+}
+// }

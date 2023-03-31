@@ -33,13 +33,12 @@ const MenuLeft = () => {
               <span>Gráficos</span>
             </div>
           </Link>
-         
-          <Link className='Link' to='/products'>
+          <Link className='Link' to='/purchaseOrder'>
             <div>
               <div className='icon'>
-                <IoMdShirt />          
+                <IoIosListBox />          
               </div>
-              <span>Produtos</span>
+              <span>Pedidos</span>
             </div>
           </Link>
           <Link className='Link' to='/services'>
@@ -48,6 +47,14 @@ const MenuLeft = () => {
                 <IoMdLaptop />          
               </div>
               <span>Serviços</span>
+            </div>
+          </Link>
+          <Link className='Link' to='/products'>
+            <div>
+              <div className='icon'>
+                <IoMdShirt />          
+              </div>
+              <span>Produtos</span>
             </div>
           </Link>
           <Link className='Link' to='/customers'>
@@ -66,14 +73,7 @@ const MenuLeft = () => {
               <span>Seguidores</span>
             </div>
           </Link>
-          {/* <Link className='Link' to='/charts'>
-            <div>
-              <div className='icon'>
-                <IoIosListBox />          
-              </div>
-              <span>Pedidos</span>
-            </div>
-          </Link> */}
+       
           <Link className='Link' to='/messages'>
             <div>
               <div className='icon'>
@@ -82,7 +82,7 @@ const MenuLeft = () => {
               <span>Mensagens</span>
             </div>
           </Link>
-          <Link className='Link' to='/productPage'>
+          <Link className='Link' to='/companyPage'>
             <div>
               <div className='icon'>
                 <IoIosGlobe />          

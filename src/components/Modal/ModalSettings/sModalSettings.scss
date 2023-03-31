@@ -1,0 +1,61 @@
+@import '../../../design/Theme/theme.scss';
+
+.modalSettings {
+    // @include themify($themes){
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+    width: 100%;
+    height: 100%;
+    
+    div {       
+        height: 12vh;
+        width: 100%;
+        border: 1px solid rgb(218, 206, 206);
+        border-radius: 10px;
+        box-shadow: 10px 5px 5px rgb(214, 206, 206); 
+        cursor: pointer; 
+            // @include mobile {
+            //     font-size: 0.6rem;   
+            //     height: 10vh;
+            // }
+        
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0.25;
+            font-size: 1.5rem;
+            // @include mobile {
+            //     font-size: 1rem;   
+            // }
+        }        
+
+        h5 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height:100%;
+            flex: 1;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+    }
+  
+    button {
+        font-size: 0.8rem;
+        height: 5vh;
+        width: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(41, 41, 114);
+        color:white;
+        // @include mobile {
+        //     height: 4vh;
+        //     width: 16vh;
+        //     font-size: 0.7rem;
+        // }        
+    }
+}
+// }

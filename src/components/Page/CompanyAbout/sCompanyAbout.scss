@@ -1,11 +1,11 @@
-// @import '../../../theme.scss';
+@import '../../../design/Theme/theme.scss';
 
 .companyAbout {
     // @include themify($themes){
     display: flex;
     align-items: center;
     justify-content: center;
-    // background-color: themed('bgTimeline');
+    background-color: rgb(224, 217, 217);
     border-radius: 10px;
     padding: 20px;
     gap: 20px;

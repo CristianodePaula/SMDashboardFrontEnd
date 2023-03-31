@@ -1,13 +1,11 @@
 .purchaseOrder {
     flex: 3.5;
-    height: 92vh;
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    img {
-        height: 200px;
-
+    height: 91.8vh;
+    overflow: scroll;
+ 
+    &::-webkit-scrollbar {
+        display: none;
     }
 }

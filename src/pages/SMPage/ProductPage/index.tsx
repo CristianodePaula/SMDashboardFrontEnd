@@ -7,12 +7,14 @@ import './sProductPage.scss'
 
 const ProductPage = () => {
   return (
-    <div className='productPage'>
-      <MenuCompany />    
-      <ProductBar />
-      <ProductHeader />
-      {/* <ProductPromotions /> */}
-      {/* <ProductTopList /> */}
+    <div  className='productPage'>
+      <div className='productPageBox'>
+        <MenuCompany />     
+        <ProductBar /> 
+        <ProductHeader /> 
+        <ProductPromotions /> 
+        <ProductTopList />
+      </div>
     </div>
   )
 }

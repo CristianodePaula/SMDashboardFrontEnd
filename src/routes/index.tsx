@@ -9,6 +9,7 @@ import {
 import LayoutBase from "../design/LayoutBase";
 
 import Login from "../pages/Login";
+
 import Home from "../pages/Home";
 import Charts from "../pages/Charts";
 import Products from "../pages/Products";
@@ -21,6 +22,7 @@ import Messages from "../pages/Chat";
 import CompanyPage from "../pages/SMPage/CompanyPage";
 import ProductPage from "../pages/SMPage/ProductPage";
 import SchedulingPage from "../pages/SMPage/SchedulingPage";
+
 import ViewProduct from "../pages/Product/ViewProduct";
 import NewProduct from "../pages/Product/NewProduct";
 import EditProduct from "../pages/Product/EditProduct";
@@ -75,10 +77,10 @@ const Routes = () => {
           path: "/messages",
           element: <Messages />,
         },
-        // { // bug de renderização
-        //   path: "/companyPage",
-        //   element: <CompanyPage />,
-        // },
+        { 
+          path: "/companyPage",
+          element: <CompanyPage />,
+        },
         {
           path: "/productPage",
           element: <ProductPage />,

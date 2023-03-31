@@ -2,8 +2,6 @@
 
 * Inserir loading
 
-
-
 # Padrão CSS
 
 * CompanyMenu => nome de componente preserva inglês
@@ -17,8 +15,6 @@
 
 CONFIG  > AJUDA / SUPORTE
 
-
-
 # LEFT BAR
 
 HOME /ESTATÍSTICAS
@@ -28,7 +24,6 @@ SERVIÇOS
 SEGUIDORES
 PEDIDOS
 MENSAGENS
-
 
 # PADRÃO SCSS
 

@@ -9,7 +9,7 @@ const MenuCompany = () => {
   return (
     <div className='menuCompany'>
       <div>
-        <Link to='/'> 
+        <Link to='/companyPage'> 
           <span> Home </span> 
         </Link>
         <Link to='/productPage'> 
@@ -17,9 +17,6 @@ const MenuCompany = () => {
         </Link> 
         <Link to='/schedulingPage'>
           <span>Agendamento</span>
-        </Link>
-        <Link to=''>
-          <span>Desempenho</span>
         </Link>
       </div>
       <div className='menuCompIcon'>

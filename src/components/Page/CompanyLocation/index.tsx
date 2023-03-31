@@ -9,7 +9,7 @@ import {
 
 const CompanyLocation = () => {
   return (
-    <div className='location'>
+    <div  className='companyLocation'>
         <div>
             <h1>Onde nos encontrar</h1>
             <div className='companyLocationIcons'>
@@ -34,7 +34,7 @@ const CompanyLocation = () => {
           </div>
           
         <div>
-          <img  src={googleMap} />
+          <img src={googleMap} />
         </div>
     </div>
   )

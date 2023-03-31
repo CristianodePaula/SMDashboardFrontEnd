@@ -1,0 +1,60 @@
+@import '../../../design/Theme/theme.scss';
+
+.modalNotifications {
+    // @include themify($themes){
+    display: flex;
+    flex-direction: column;    
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20vh;    
+    gap: 20px;
+
+    .modalNotUser {
+            height: 60px;
+            width: 100%;
+            border-radius: 20px;
+            // background: themed('bgResearch');
+        background-color: white;
+            gap: 10px;
+            cursor: pointer;
+
+                img {
+                    height: 45px;
+                    width: 45px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    // @include mobile {
+                    //     height: 35px;
+                    //     width: 35px;
+                    // }
+                } 
+        
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    
+                    span:nth-child(1) {
+                        font-weight: 600;
+                        font-size: 0.8rem;
+                        // @include mobile {
+                        //     font-size: 0.7rem;
+                        // }
+                    }            
+                    span:nth-child(2) {
+                        font-weight: 400;
+                        font-size: 0.8rem;
+                        // @include mobile {
+                        //     font-size: 0.7rem;
+                        // }
+
+                    }
+                    span:nth-child(3) {
+                        font-weight: 400;
+                        font-size: 0.6rem;  
+                        color: grey;
+                    }
+                }
+            }   
+    }
+// }
