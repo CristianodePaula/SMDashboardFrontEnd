@@ -4,7 +4,6 @@ import LastMembersCard from '../../components/Cards/MembersCard'
 import NewUsersCard from '../../components/Cards/NewUserCard'
 import CommentsCard from '../../components/Cards/CommentsCard'
 
-
 const Home = () => {
   return (
     <div className='home'>

@@ -1,15 +1,17 @@
+@import '../../../design/Theme/theme.scss';
+
 .commentsCard {
+    @include themify($themes){
+    flex: 1;
     display: flex;
     flex-direction: column;    
-    height: 52vh;
-    width: 100%;
-    padding: 10px;
-
+    
     h5 {
         font-size: 15px;
         display: flex;
         align-items: center;
-  
+        color: themed('textColor');
+
     }
 
     .modalNotUser {
@@ -20,8 +22,6 @@
         height: 45px;
         box-shadow: 4px 4px 10px 2px rgba(201, 201, 201, 0.47);
         border-radius: 10px;
-        
-        ;
            
                 img {
                     height: 45px;
@@ -34,6 +34,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
+                    color: themed('textColor');
                     
                     span:nth-child(1) {
                         font-weight: 600;
@@ -60,4 +61,4 @@
             // }
         
         }
-
+    }

@@ -1,8 +1,13 @@
+@import '../../design/Theme/theme.scss';
+
 .services {
+    @include themify($themes){
+
     flex: 3.5;
     // display: flex;
     // flex-direction: column;
     height: 91.8vh;
+    background-color: themed('backgColor');
     overflow: scroll;
  
     &::-webkit-scrollbar {
@@ -17,4 +22,4 @@
     //         background: rgb(224, 221, 221);
     //     }
     // }
-}
+}}

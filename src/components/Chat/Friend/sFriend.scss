@@ -1,7 +1,7 @@
 @import '../../../design/Theme/theme.scss';
 
 .friend {
-//   @include themify($themes){
+  @include themify($themes){
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -35,4 +35,4 @@
         }
     }
 }
-// }
+}

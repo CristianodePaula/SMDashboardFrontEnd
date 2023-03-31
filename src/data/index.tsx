@@ -49,4 +49,16 @@ export const dataTabProd = [
     }
   ]
 
+  export const dataTeste = [
+    {
+      name: 'Fulano',
+      email: "fulano@smmail.com",
+      imgURL: 'https://images.pexels.com/photos/1557843/pexels-photo-1557843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    },
+    {
+      name: 'Beltrano',
+      email: "beltrano@smmail.com",
+      imgURL: 'https://images.pexels.com/photos/1557843/pexels-photo-1557843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    },
+  ]
   

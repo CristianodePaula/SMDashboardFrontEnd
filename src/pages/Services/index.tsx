@@ -1,6 +1,7 @@
 import Table from '../../components/Table'
 import './sServices.scss'
 
+
 const Services = () => {
   return (
     <div className='services'>

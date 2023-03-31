@@ -1,7 +1,11 @@
+@import '../../design/Theme/theme.scss';
+
 .chat {
+    @include themify($themes){
     flex: 3.5;
     display: flex;
     height: 91.8vh;
+    background-color: themed('backgColor');
     overflow: scroll;
  
     &::-webkit-scrollbar {
@@ -12,4 +16,4 @@
         display: flex;
         padding: 20px;
     }
-}
+}}

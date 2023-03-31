@@ -1,7 +1,29 @@
 import './sWidget.scss'
 import { IoIosArrowUp, IoMdPerson } from "react-icons/io";
 
-const Widget = ({type}) => {
+const Widget = ({title}) => {
+
+  return (
+    <div className='widget'>
+      <div>
+        <a className="title"> {title} </a>
+        <span className="counter"> 2312 </span>
+        <span className="link"> Informações </span>   
+      </div>
+      <div style={{alignItems: "flex-end"}}>
+        <div>
+          <span>  <IoIosArrowUp />  200 %</span>
+        </div>
+        <span className='widgetIcon'><IoMdPerson /></span>
+      </div>    
+    </div>
+  )
+}
+
+export default Widget
+
+
+
 
   // let data;
 
@@ -74,22 +96,3 @@ const Widget = ({type}) => {
   //   default:
   //     break;
   // }
-
-  return (
-    <div className='widget'>
-      <div>
-        <a className="title"> {type} </a>
-        <span className="counter"> 2312 </span>
-        <span className="link"> Informações </span>   
-      </div>
-      <div style={{alignItems: "flex-end"}}>
-        <div>
-          <span>  <IoIosArrowUp />  200 %</span>
-        </div>
-        <span className='widgetIcon'><IoMdPerson /></span>
-      </div>    
-    </div>
-  )
-}
-
-export default Widget

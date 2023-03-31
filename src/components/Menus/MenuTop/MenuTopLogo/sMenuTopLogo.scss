@@ -1,5 +1,7 @@
+@import '../../../../design/Theme/theme.scss';
+
 .menuTopLogo {
-    // @include themify($themes){
+    @include themify($themes){
     flex: 1;
     height: 100%;  
     display: flex;
@@ -8,19 +10,19 @@
     img {
         height: 50px;
         width: 50px;
-        // @include mobile {
-        //     height: 40px;
-        //     width: 40px;
-        // }
+        @include mobile {
+            height: 40px;
+            width: 40px;
+        }
        }
     
     h1 {
         font-size: 1.1rem;
         margin-left: 5px;   
         color:rgb(76, 89, 187);
-        // @include mobile {
-        //     font-size: 1rem
-        // }]
+        @include mobile {
+            font-size: 1rem
+        }
     }
 }
-// }
+}

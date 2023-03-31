@@ -1,16 +1,18 @@
+@import '../../../design/Theme/theme.scss';
+
 .lastMembersCard {
+  @include themify($themes){
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  gap: 10px;
-
   h1 {
     font-size: 16px;
+    color: themed('textColor');
   }
 
   div {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 10px;
+    color: themed('textColor');
   }
-}
+}}

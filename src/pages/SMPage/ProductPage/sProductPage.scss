@@ -1,10 +1,13 @@
-// @import '../../../theme.scss';
+@import '../../../design/Theme/theme.scss';
+
 
 .productPage {
+  @include themify($themes){
   flex: 3.5;
   display: flex;
   flex-direction: column;
   height: 91.8vh;
+  background-color: themed('backgColor');
   overflow: scroll;
 
   &::-webkit-scrollbar {
@@ -17,4 +20,5 @@
     padding: 20px;
     gap: 20px;
   }
+}
 }

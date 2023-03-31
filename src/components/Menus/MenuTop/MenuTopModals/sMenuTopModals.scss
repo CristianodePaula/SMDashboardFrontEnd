@@ -1,7 +1,7 @@
-// @import '../../../../theme.scss';
+@import '../../../../design/Theme/theme.scss';
 
 .menuTopModals {
-    // @include themify($themes){
+    @include themify($themes){
     flex: 1;
     display: flex;
     align-items: center;
@@ -10,9 +10,9 @@
 
     .navMenuHambIcon {
         display: none;
-        // @include mobile {
-        // display: block;
-        // }
+        @include mobile {
+        display: block;
+        }
     }
     
     div {
@@ -20,10 +20,11 @@
         align-items: center;
         justify-content: center;
         font-size: 1.5rem;
+        color: themed('textColor');
         cursor: pointer;
-        // @include mobile {
-        //     font-size: 1.2rem;
-        // }
+        @include mobile {
+            font-size: 1.2rem;
+        }
     }
 }
-// }
+}

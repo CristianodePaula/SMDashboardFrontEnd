@@ -5,7 +5,7 @@ import {
   IoMdSettings
 } from "react-icons/io";
 import Modal from "../../../Modal";
-import ModalNotifications from "../../../Modals/ModalNotifications";
+import ModalNotifications from "../../../Modal/ModalNotifications";
 import ModalSettings from "../../../Modal/ModalSettings";
 
 

@@ -8,10 +8,10 @@ const Charts = () => {
   return (
     <div className='charts'>
       <div>
-        <Widget type="Usuários"/>
-        <Widget type="Ordens"/>
-        <Widget type="Compras"/>
-        <Widget type="Balanço"/>
+        <Widget title="Usuários"/>
+        <Widget title="Ordens"/>
+        <Widget title="Compras"/>
+        <Widget title="Balanço"/>
       </div>
       <div className='chartsBox'>
         <div style={{display: 'flex', flexDirection: 'column'}}>

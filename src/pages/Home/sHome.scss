@@ -1,19 +1,28 @@
+@import '../../design/Theme/theme.scss';
+
 .home{
+    @include themify($themes){
     flex: 3.5;
     display: flex;
     flex-direction: column;
     height: 91.8vh;
+    background-color: themed('backgColor');
     overflow: scroll;
- 
+    
+    
     &::-webkit-scrollbar {
         display: none;
       }
 
     .homeUsers {
         display: flex;
+        gap: 20px;
+        padding: 20px;
     }
 
     .homeSocial {
         display: flex;
+        gap: 20px;
+        padding: 20px;
     }
-}
+}}

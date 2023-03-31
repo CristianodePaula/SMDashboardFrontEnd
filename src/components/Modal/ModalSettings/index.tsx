@@ -31,13 +31,13 @@ const ModalSettings = () => {
            <span
            > <IoInvertModeOutline onClick={toggle} /></span> 
             ) : (
-          <span>  <IoInvertModeOutline onClick={toggle} /></span>  
-        )}
+          <span>  
+            <IoInvertModeOutline onClick={toggle} /></span>  
+          )}
          <h5>Modo Claro/Escuro</h5>
          </>       
       </div> 
 
-      
       <div onClick={()=> setOpenModal1(!openModal1)}>
         <span>
           <IoIosMan />

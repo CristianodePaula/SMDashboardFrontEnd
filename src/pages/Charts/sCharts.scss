@@ -1,11 +1,15 @@
+@import '../../design/Theme/theme.scss';
+
+
 .charts  {
+    @include themify($themes){
     flex: 3.5;
     display: flex;
     flex-direction: column;
     gap: 20px;
     height: 85vh;
     padding: 20px;
-    // background-color: grey;
+    background-color: themed('backgColor');
 
     overflow: scroll;
    
@@ -23,4 +27,4 @@
         gap: 20px;
 
     }
-}
+}}

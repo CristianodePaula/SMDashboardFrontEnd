@@ -1,21 +1,20 @@
+@import '../../../design/Theme/theme.scss';
+
 .menuLeft {
+    @include themify($themes){
     flex: 0.7;
     display: flex;
     flex-direction: column;
     padding: 40px 20px 0px 40px;
     gap: 28px;  
-    border-right: 1px solid rgb(224, 217, 217);
+    border-right: 1px solid themed('backgBoxColor');
+    background-color: themed('backgColor');
  
-    h1 {
-        font-size: 16px;
-        color: navy;
-    }
-
     div {
         display: flex;
         align-items: center;
         gap: 10px;
-        color: navy;
+        color: themed('textColor');
         cursor: pointer;
     
         .icon {
@@ -26,4 +25,4 @@
     span {
         font-size: 0.95rem;
     }
-}
+}}

@@ -1,10 +1,12 @@
+@import '../../../design/Theme/theme.scss';
+
 .newUsersCard {
+        @include themify($themes){
+        flex: 1;
         display: flex;        
         flex-direction: column;
         padding-left: 20px;
-        margin: 20px;
-        width: 100%; 
-        background: linear-gradient(to bottom,rgb(215, 203, 243),rgb(255, 255, 255));
+        background: themed('backgBoxDColor');
         box-shadow: 4px 4px 10px 2px rgba(201, 201, 201, 0.47);
         border-radius: 10px;
                 
@@ -12,6 +14,7 @@
             font-size: 15px;
             display: flex;
             align-items: center;
+            color: themed('textColor');
         }
 
         div {
@@ -30,6 +33,7 @@
 
             span {
                 font-size: 0.8rem;
+                color: themed('textColor');
             }
         }
    
@@ -42,4 +46,4 @@
         margin-bottom: 40px;
     }
     }
-
+}

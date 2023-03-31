@@ -1,17 +1,20 @@
+@import '../../../design/Theme/theme.scss';
+
+
 .welcome {
+    @include themify($themes){
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 10px;
-
         h1 {
             font-size: 16px;
+            color: themed('textColor');
         }
 
         img {
-            height: 290px;
-            width: 500px;
+            height: 260px;
+            width: 440px;
             object-fit: cover;
             border-radius: 10px;
         }
+    }
 }
