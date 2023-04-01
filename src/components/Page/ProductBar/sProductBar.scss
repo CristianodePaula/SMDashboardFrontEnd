@@ -1,15 +1,14 @@
-// @import '../../../theme.scss';
+@import '../../../design/Theme/theme.scss';
 
 .productBar {
-    // @include themify($themes){
-    height: 8vh;
-    // background-color: themed('bgTimeline');
+    @include themify($themes){
+    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
     padding: 6px;
-    background-color: rgb(224, 217, 217);
+    background: themed('backgBoxColor'); 
     
     img {
         height: 30px;
@@ -25,10 +24,10 @@
         width: 25vw;
         border-radius: 10px;
         padding-left: 10px;
-            // @include mobile {
-            //     height: 4vw;
-            //     width: 55vw;
-            // }
+            @include mobile {
+                height: 4vw;
+                width: 55vw;
+            }
         }
     }
-// }
+}

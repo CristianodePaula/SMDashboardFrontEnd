@@ -12,6 +12,7 @@ import Login from "../pages/Login";
 
 import Home from "../pages/Home";
 import Charts from "../pages/Charts";
+import Clipboard from "../pages/Clipboard";
 import Products from "../pages/Products";
 import Customers from "../pages/Customers";
 import Followers from "../pages/Followers";
@@ -26,6 +27,7 @@ import SchedulingPage from "../pages/SMPage/SchedulingPage";
 import ViewProduct from "../pages/Product/ViewProduct";
 import NewProduct from "../pages/Product/NewProduct";
 import EditProduct from "../pages/Product/EditProduct";
+
 
 
 const Routes = () => {
@@ -52,6 +54,10 @@ const Routes = () => {
         {
           path: "/charts",
           element: <Charts />,
+        },
+        {
+          path: "/clipboard",
+          element: <Clipboard />,
         },
         {
           path: "/products",

@@ -1,20 +1,13 @@
+import Table from '../../components/Table'
 import './sCustomers.scss'
-import TableFinal from '../../components/TableFinal';
-import { dataTeste } from '../../data';
-import Table from '../../components/Table';
+import { dbTableBody } from "../../data";
+import { dbTableHeader } from "../../data";
 
 const Customers = () => {
   return (
     <div className='customers'>
-      {/* {dataTeste.map(teste => 
-        <TableFinal 
-          name={teste} 
-          email={teste}
-          imgURL={teste}
-        />
-      )} */}
-    <Table />
-  </div>
+           <Table theadData={dbTableHeader} tbodyData={dbTableBody} />
+    </div>
   )
 }
 

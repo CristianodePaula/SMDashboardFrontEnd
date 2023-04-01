@@ -1,5 +1,3 @@
-import { dataTabProd } from '../../data'
-import './sTableFinal.scss'
 import { Link } from 'react-router-dom'
 import { 
   IoIosCreate,
@@ -7,21 +5,13 @@ import {
   IoIosEye,
  } from "react-icons/io";
 
-const TableFinal = ({name, email, imgURL}) => {
-  return (
-    <table>
-      <tbody>
-          <tr>
-            <th>Imagem</th>
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Ações</th>
-          </tr>
-          <tr>
-            <td>
+const TableBody = ({name, email, imgURL}) => {
+    return (
+        <tr>
+            <td style={{display: 'flex', alignItems: 'center'}}>
               <img src={imgURL.imgURL}/>
+              <td>{name.name}</td>
             </td>
-            <td>{name.name}</td>
             <td>{email.email}</td>
             <td> 
             <Link to='/viewProduct'>
@@ -39,9 +29,7 @@ const TableFinal = ({name, email, imgURL}) => {
               </button>
             </td>
           </tr>
-      </tbody>
-    </table>
-  )
-}
+    );
+};
 
-export default TableFinal
+export default TableBody;

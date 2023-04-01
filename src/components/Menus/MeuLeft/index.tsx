@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom'
 import {
   IoMdHome, 
   IoMdStats,
+  IoIosClipboard,
   IoIosGlobe,
   IoMdShirt,
   IoMdLaptop,
   IoMdPeople,   
   IoIosPeople,
   IoIosListBox,
-  IoIosChatboxes
+  IoIosChatboxes,
 }  from  "react-icons/io";
 
 const MenuLeft = () => {
@@ -31,6 +32,14 @@ const MenuLeft = () => {
                 < IoMdStats />          
               </div>
               <span>Gráficos</span>
+            </div>
+          </Link>
+          <Link className='Link' to='/clipboard'>
+            <div>
+              <div className='icon'>
+                < IoIosClipboard />          
+              </div>
+              <span>Pesquisas</span>
             </div>
           </Link>
           <Link className='Link' to='/purchaseOrder'>

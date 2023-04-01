@@ -1,4 +1,4 @@
-export const dataTabProd = [
+export const dbTableProd = [
     {
       imgProd: 'https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       name: 'Computador',
@@ -49,7 +49,19 @@ export const dataTabProd = [
     }
   ]
 
-  export const dataTeste = [
+  export const dbTableHeader = ["Name", "Email", "Image", ""]
+
+  export const dbTableBody = [
+    {
+      name: 'Fulano',
+      email: "fulano@smmail.com",
+      imgURL: 'https://images.pexels.com/photos/1557843/pexels-photo-1557843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    },
+    {
+      name: 'Beltrano',
+      email: "beltrano@smmail.com",
+      imgURL: 'https://images.pexels.com/photos/1557843/pexels-photo-1557843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    },
     {
       name: 'Fulano',
       email: "fulano@smmail.com",

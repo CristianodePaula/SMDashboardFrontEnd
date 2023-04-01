@@ -1,11 +1,13 @@
 import Table from '../../components/Table'
 import './sServices.scss'
+import { dbTableBody } from "../../data";
+import { dbTableHeader } from "../../data";
 
 
 const Services = () => {
   return (
     <div className='services'>
-        <Table />
+             <Table theadData={dbTableHeader} tbodyData={dbTableBody} />
     </div>
   )
 }

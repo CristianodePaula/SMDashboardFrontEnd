@@ -1,14 +1,15 @@
-// @import '../../../theme.scss';
+@import '../../../design/Theme/theme.scss';
 
 .schedulingList {
-    // @include themify($themes){
+    @include themify($themes){
     border-radius: 10px;
-    background-color: rgb(224, 217, 217);
+    background-color: themed('backgBoxColor');
     border-radius: 10px;
     padding: 30px;
 
     h3 { 
         font-size: 16px;
+        color: themed('textColor');
     }
 
     div {
@@ -16,9 +17,9 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         gap: 30px;
         text-align: center;
-        // @include mobile {
-        //     grid-template-columns: 1fr 1fr ;
-        // }
+        @include mobile {
+            grid-template-columns: 1fr 1fr ;
+        }
        
     span {
         display: flex;
@@ -34,4 +35,4 @@
         }
     }
 }
-// }
+}
