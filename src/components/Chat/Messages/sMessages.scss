@@ -1,15 +1,15 @@
-// @import '../../../theme.scss';
+@import '../../../design//Theme/theme.scss';
 
 .messages {
-    // @include themify($themes){
-    flex: 2;
+    @include themify($themes){
     border-radius: 20px;
+    width: 52vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    // @include mobile {
-    //     display: none;
-    // }
+    @include mobile {
+        display: none;
+    }
     
     .messagesLine {
         
@@ -20,4 +20,4 @@
         }
     }
 }
-// }
+}

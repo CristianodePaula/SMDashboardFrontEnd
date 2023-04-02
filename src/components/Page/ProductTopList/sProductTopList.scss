@@ -1,10 +1,10 @@
-// @import '../../../theme.scss';
+@import '../../../design/Theme/theme.scss';
 
 .productTopList {
-    // @include themify($themes){
+    @include themify($themes){
         align-items: center;
         justify-content: center;
-        // background-color: themed('bgTimeline');
+        background-color: themed('backgBoxColor');
         border-radius: 10px;
         padding: 20px;
         
@@ -12,10 +12,9 @@
             font-size: 1rem;
             color: themed("menuColor");
             padding-bottom: 20px;
-            // @include mobile {
-            //     font-size: 0.9rem;
-            // }
-            
+            @include mobile {
+                font-size: 0.9rem;
+            }
         }
 
         div {
@@ -23,10 +22,10 @@
             align-items: center;
             justify-content: center;
             gap: 20px;
-            // @include mobile {
-            //     display: grid;
-            //     grid-template-columns: 1fr 1fr;    
-            // }   
+            @include mobile {
+                display: grid;
+                grid-template-columns: 1fr 1fr;    
+            }   
 
             .companyBestSellersItem {
                 position: relative;
@@ -36,10 +35,10 @@
                     width: 215px;
                     object-fit: cover;
                     border-radius: 5px;
-                    // @include mobile {
-                    //     height: 100px;
-                    //     width: 180px;
-                    // }
+                    @include mobile {
+                        height: 100px;
+                        width: 180px;
+                    }
                 }
 
                 span {
@@ -50,12 +49,12 @@
                     font-weight: 600;
                     color: white;
                     text-shadow: 5px 5px 5px black;
-                    // @include mobile {
-                    //     right: 15%;
-                    //     font-size: 0.9rem;
-                    // }
+                    @include mobile {
+                        right: 15%;
+                        font-size: 0.9rem;
+                    }
                 }     
             }
         }
     }
-// }
+}

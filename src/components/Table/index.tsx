@@ -16,15 +16,17 @@ const Table = ({ theadData, tbodyData, customClass }) => {
                         return <TableHead key={h} item={h} />;
                     })}
                 </tr>
-            </thead>
+            </thead>    
             <tbody>
-            {tbodyData.map(tbody => 
+              {tbodyData.map(tbody => 
                 <TableBody 
-                    name={tbody} 
-                    email={tbody}
-                    imgURL={tbody}
-                />
-            )} 
+                name={tbody} 
+                email={tbody}
+                imgURL={tbody}
+                desc={tbody}
+                price={tbody}
+            />
+            )}  
             </tbody>
         </table>
         </div>    
@@ -32,3 +34,7 @@ const Table = ({ theadData, tbodyData, customClass }) => {
 };
 
 export default Table;
+
+// {tbodyData.map((item) => {
+//     return <TableBody key={item.id} data={item.items} />;
+// })}

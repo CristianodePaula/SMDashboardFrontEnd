@@ -5,31 +5,52 @@ import {
   IoIosEye,
  } from "react-icons/io";
 
-const TableBody = ({name, email, imgURL}) => {
+const TableBody = ({imgURL, name, email, desc, price}) => {
     return (
         <tr>
-            <td style={{display: 'flex', alignItems: 'center'}}>
-              <img src={imgURL.imgURL}/>
-              <td>{name.name}</td>
+            <td>
+              <div>
+                <img src={imgURL.imgURL}/>
+                <td>{name.name}</td>
+              </div>
             </td>
             <td>{email.email}</td>
-            <td> 
-            <Link to='/viewProduct'>
-              <button>
-                <IoIosEye />
-              </button>
-            </Link>
-            <Link to='/newProduct'>
-              <button> 
-                <IoIosCreate />
-              </button>
-            </Link>
-              <button> 
-                <IoIosTrash />
-              </button>
+            <td>{desc.desc}</td>
+            <td>{price.price}</td>
+            <td>
+              <div style={{justifyContent: 'center'}} >
+                <Link to='/viewProduct'>
+                  <button>
+                    <IoIosEye />
+                  </button>
+                </Link>
+                <Link to='/newProduct'>
+                  <button>  
+                    <IoIosCreate />
+                  </button>
+                </Link>
+              <Link to=''>
+                <button> 
+                  <IoIosTrash />
+                </button>
+              </Link>
+              </div>
             </td>
-          </tr>
+        </tr>
     );
 };
 
 export default TableBody;
+
+
+// const TableBody = ({ data }) => {
+//     return (
+//         <tr>
+//             {data.map((item) => {
+//                 return <td key={item}>{item}</td>;
+//             })}
+//         </tr>
+//     );
+//   };
+  
+//   export default TableBody;

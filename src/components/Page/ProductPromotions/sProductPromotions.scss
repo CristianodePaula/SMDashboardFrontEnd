@@ -1,33 +1,26 @@
-// @import '../../../theme.scss';
+@import '../../../design/Theme/theme.scss';
 
 .productPromotions {
-    // @include themify($themes){
-        align-items: center;
+    @include themify($themes){
+        display: flex;
         justify-content: center;
-        // background-color: themed('bgTimeline');
+        background-color: themed('backgBoxColor');
         border-radius: 10px;
-        // padding: 20px;
-
-        // h1 {
-        //     font-size: 1rem;
-        //     color: themed("menuColor");
-        //     padding-bottom: 20px;
-                // @include mobile {
-                //     font-size: 0.9rem;
-                // }
-        // }
+        padding: 20px;
         
-        div {
+        .companyPromotionItem {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 20px;
-            // @include mobile {
-            //     display: grid;
-            //     grid-template-columns: 1fr 1fr;    
-            // }   
+
+            @include mobile {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                
+            }   
             
-        .companyPromotionItem {
+        div {
             position: relative;
 
             img {
@@ -35,10 +28,10 @@
                 width: 300px;
                 object-fit: cover;
                 border-radius: 5px;
-                // @include mobile {
-                //     height: 100px;
-                //     width: 180px;
-                // }
+                @include mobile {
+                    height: 10px;
+                    width: 180px;
+                }
             }
 
             span {
@@ -49,11 +42,11 @@
                 font-weight: 600;
                 color: white;
                 text-shadow: 5px 5px 5px black;
-                // @include mobile {
-                //     font-size: 0.9rem;
-                // } 
+                @include mobile {
+                    font-size: 0.9rem;
+                } 
             }     
             }
         }
     }
-// }
+}

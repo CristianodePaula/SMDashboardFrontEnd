@@ -10,11 +10,14 @@
         box-shadow: 4px 4px 10px 2px rgba(201, 201, 201, 0.47);
         border-radius: 10px;
                 
-        h5 {
-            font-size: 15px;
+        h1 {
+            font-size: 16px;
             display: flex;
             align-items: center;
             color: themed('textColor');
+            @include mobile {
+                font-size: 14px;
+            }
         }
 
         div {
@@ -32,8 +35,11 @@
             }
 
             span {
-                font-size: 0.8rem;
+                font-size: 14px;
                 color: themed('textColor');
+                @include mobile {
+                    font-size: 12px;
+                }
             }
         }
    

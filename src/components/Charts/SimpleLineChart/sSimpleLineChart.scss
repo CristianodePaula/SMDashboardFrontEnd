@@ -1,10 +1,16 @@
+@import '../../../design/Theme/theme.scss';
+
 .simpleLineChart{
-    height: 57.5vh;
-    width: 50vw;
+    @include themify($themes){
+    height: 59vh;
     padding: 20px;
+    width: 48vw;
     border-radius: 10px;
     box-shadow: 4px 4px 10px 2px rgba(201, 201, 201, 0.47);
-
-}
+        @include mobile {
+            height: 30vh;
+            width: 91%;
+        }
+}}
 
 

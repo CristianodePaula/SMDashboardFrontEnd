@@ -1,20 +1,26 @@
 @import '../../../design/Theme/theme.scss';
 
-
 .welcome {
     @include themify($themes){
     display: flex;
     flex-direction: column;
+    width: 100%;
+    
         h1 {
             font-size: 16px;
             color: themed('textColor');
+            @include mobile {
+                font-size: 14px;
+            }
         }
 
         img {
             height: 260px;
-            width: 440px;
             object-fit: cover;
             border-radius: 10px;
+            @include mobile {
+                height: 200px;
+             }
         }
     }
 }

@@ -7,18 +7,20 @@ import SimpleLineChart from '../../components/Charts/SimpleLineChart'
 const Charts = () => {
   return (
     <div className='charts'>
-      <div>
+      <div className='chartsWidget'>
         <Widget title="Usuários"/>
         <Widget title="Ordens"/>
         <Widget title="Compras"/>
         <Widget title="Balanço"/>
       </div>
       <div className='chartsBox'>
-        <div style={{display: 'flex', flexDirection: 'column'}}>
-        <BarChartNoPadding />
-        <SimpleAreaChart />
+        <div>
+          <BarChartNoPadding />
+          <SimpleAreaChart />
         </div>
+        <div>
           <SimpleLineChart />
+        </div>
       </div>
     </div>
   )

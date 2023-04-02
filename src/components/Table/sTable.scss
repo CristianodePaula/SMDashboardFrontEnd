@@ -18,14 +18,13 @@
     color: white;
     background: blue;
     font-size: 14px;
-    margin-bottom: 2px;
   }
   
   table, tr, td, th{
     padding: 10px;
     font-size: 16px; 
-    color: themed('textColor');
   }
+
   table {
     border: 1px solid rgb(224, 220, 220);
     border-radius: 10px;
@@ -35,27 +34,58 @@
   thead {
     background-color: themed('tHeadColor');
     color: themed('backgColor');
+      @include mobile {
+      border: none;
+    // clip: rect(0 0 0 0);
+    height: 1px;
+    // margin: -1px;
+    overflow: hidden;
+    // padding: 0;
+    position: absolute;
+    width: 1px;
+    }
 }
+
+tr {
+  @include mobile {
+    // border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+}
+ 
   tr:nth-child(even) 
   { 
     background-color:themed('backgBoxColor');
   }
-  th
-    {
-    background-color:grey;
-    color:#FFF;    
+  tbody
+    { 
+      color: themed('textColor');    
   }
   td {
-    max-width: 400px;
+    max-width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    
+    justify-content: flex-end;
+    @include mobile {
+      max-width: 400px;
+      border-bottom: 1px solid rgb(187, 181, 181);
+      display: block;
+      font-size: .8em;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+
     img {
-      height: 120px;
-      width: 100px; 
+      height: 40px;
+      width: 40px;
+      border-radius: 50%; 
       object-fit: cover;
     }
+  }
 
     button:nth-child(n) {
       display: flex;

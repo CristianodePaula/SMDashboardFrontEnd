@@ -1,5 +1,23 @@
+@import '../../../design/Theme/theme.scss';
+
 .menuMobile {
-    background-color: yellow;
-    height: 10vh;
-    width: 100vw;
+    @include themify($themes){
+        // display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        padding: 5px 0px 5px 0px;
+        background-color: themed('backgBoxColor');
+
+            @include mobile {
+                display: flex;
+            }   
+
+       
+            span {
+                font-size: 20px;
+                color: themed('menuColor');
+                cursor: pointer;
+            }
+    }
 }

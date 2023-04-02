@@ -16,14 +16,28 @@
         display: none;
       }
     
-    div {
+    .chartsWidget {
         display: flex;
         gap: 10px;  
+        @include mobile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     .chartsBox {
         display: flex;
-        gap: 20px;
+        align-items: center;
 
+        gap: 20px;
+        @include mobile {
+             flex-direction: column;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px
+        }
     }
 }}

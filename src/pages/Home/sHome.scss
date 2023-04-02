@@ -18,11 +18,17 @@
         display: flex;
         gap: 20px;
         padding: 20px;
+        @include mobile {
+            flex-direction: column;
+        }
     }
 
     .homeSocial {
         display: flex;
         gap: 20px;
         padding: 20px;
+        @include mobile {
+            flex-direction: column;
+        }
     }
 }}

@@ -1,4 +1,7 @@
+@import '../../../design/Theme/theme.scss';
+
 .userCard {
+    @include themify($themes){
     display: flex;
     align-items: center;
     padding: 20px;
@@ -27,4 +30,4 @@
             }
         }
     }
-}
+}}

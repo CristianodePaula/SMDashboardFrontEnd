@@ -9,6 +9,10 @@
     gap: 28px;  
     border-right: 1px solid themed('backgBoxColor');
     background-color: themed('backgColor');
+
+    @include tablet{
+        display: none;
+    }
  
     div {
         display: flex;

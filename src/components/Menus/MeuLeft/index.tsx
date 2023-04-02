@@ -34,14 +34,14 @@ const MenuLeft = () => {
               <span>Gráficos</span>
             </div>
           </Link>
-          <Link className='Link' to='/clipboard'>
+          {/* <Link className='Link' to='/clipboard'>
             <div>
               <div className='icon'>
                 < IoIosClipboard />          
               </div>
               <span>Pesquisas</span>
             </div>
-          </Link>
+          </Link> */}
           <Link className='Link' to='/purchaseOrder'>
             <div>
               <div className='icon'>

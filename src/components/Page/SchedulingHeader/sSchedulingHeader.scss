@@ -1,7 +1,7 @@
-// @import '../../../theme.scss';
+@import '../../../design/Theme/theme.scss';
 
 .schedulingHeader {
-    // @include themify($themes){
+    @include themify($themes){
     position: relative;
     width: 100%;
 
@@ -26,9 +26,9 @@
         text-shadow: 5px 5px 5px black;   
         font-size: 1.2rem;
         display: flex;
-        //    @include mobile {
-        //         font-size: 0.9rem;
-        //      }
+           @include mobile {
+                font-size: 0.9rem;
+             }
     }
 }
-// }
+}

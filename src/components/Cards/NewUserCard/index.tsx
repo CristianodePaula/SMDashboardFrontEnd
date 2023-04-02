@@ -3,7 +3,7 @@ import './sNewUsersCard.scss'
 const NewUsersCard = ({title}) => {
   return (
  <div className='newUsersCard'>
-    <h5>{title}</h5>
+    <h1>{title}</h1>
       <div>
         <img src='https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
         <span>Jessy Oliver</span>

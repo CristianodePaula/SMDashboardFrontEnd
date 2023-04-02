@@ -1,7 +1,6 @@
 const TableHeadItem = ({ item }) => {
     return (
-        <td title={item} 
-        >
+        <td title={item}>
             {item}
         </td>
     );

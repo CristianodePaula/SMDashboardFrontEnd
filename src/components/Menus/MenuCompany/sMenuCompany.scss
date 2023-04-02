@@ -15,20 +15,30 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
+         @include mobile {
+              gap: 0px;
+            }
 
         span {
-            font-size: 1rem;
+            font-size: 16px;
             padding: 10px;
             color: white;
             cursor: pointer;
+              @include mobile {
+                font-size: 14px;
+              }
         }
       }
 
       .menuCompIcon {
         display: flex;
         gap: 0px;
-        font-size: 1.5rem;
+        font-size: 30px;
         color: white;
+        @include mobile {
+          font-size: 14px;
+        }
+
       }
     }
 }
