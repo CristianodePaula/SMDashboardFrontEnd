@@ -2,18 +2,15 @@
 
 .menuMobile {
     @include themify($themes){
-        // display: none;
-        align-items: center;
+        display: none;
         justify-content: center;
         gap: 25px;
-        padding: 5px 0px 5px 0px;
-        background-color: themed('backgBoxColor');
-
+        padding-top: 15px;
+        background-color: themed('backgColor');
             @include mobile {
                 display: flex;
             }   
 
-       
             span {
                 font-size: 20px;
                 color: themed('menuColor');
